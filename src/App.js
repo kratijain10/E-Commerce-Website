@@ -5,6 +5,7 @@ import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product'; 
 import Cart from './Pages/Cart'; 
 import Login from './Pages/Login'; 
+import Footer from './components/Footer/Footer';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -12,7 +13,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Navbar />
+        <Navbar/>
         <Routes>
           <Route path='/' element={<Shop/>} />
           <Route path='/mens' element={<ShopCategory category="men" />} />
@@ -24,6 +25,7 @@ function App() {
           <Route path='/cart' element={<Cart />} />
           <Route path='/login' element={<Login />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

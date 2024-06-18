@@ -21,7 +21,7 @@
      
 }
 
-p{
+.hero-left p{
     color: #171717;
     font-size: 90px ;
     font-weight: 700;
@@ -59,3 +59,5 @@ p{
     justify-content: center;
     
 }
+
+
